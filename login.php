@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (password_verify($password, $hashed_password)) {
             $_SESSION['user_id'] = $id;
             $_SESSION['username'] = $username;
-            header("Location: kasir.php");
+            header("Location: index.php");
             exit();
         } else {
             $error = "Password salah.";
@@ -69,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="mb-3">
             <input type="password" name="password" class="form-control" placeholder="Password" required>
         </div>
-        <button class="btn btn-primary w-100">Login</button>
+        <button class="btn btn-primary w-100" type="submit">Login</button>
     </form>
     <div class="mt-3 text-center">
         <a href="signup.php" class="text-light text-decoration-underline">Belum punya akun? Daftar</a>
