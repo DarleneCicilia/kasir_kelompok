@@ -299,6 +299,9 @@ $totalBayar = $total + $pajak;
 </script>
 <body>
 <div class="container">
+    <div class="mb-3">
+        <a href="pembelian-view.php" class="btn btn-primary">Kembali</a>
+    </div>
     <h2>Form Transaksi Pembelian</h2>
 
     <!-- Form Tambah Item -->

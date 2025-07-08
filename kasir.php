@@ -192,6 +192,9 @@ $totalWeight = 0;
 </head>
 <body>
 <div class="container">
+    <div class="mb-2">
+        <a href="index.php"><button>Kembali</button></a>
+    </div>
     <h1>🛒 Transaksi Penjualan</h1>
 
     <div class="main-content">
