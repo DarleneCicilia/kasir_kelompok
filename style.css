@@ -1,0 +1,213 @@
+/* Reset & base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #2c3e50;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 0;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 35px;
+  color: #34495e;
+}
+
+/* Form and Cart side by side on desktop */
+@media (min-width: 700px) {
+  .flex-row {
+    display: flex;
+    gap: 40px;
+  }
+
+  .form-card, .cart-card {
+    flex: 1;
+  }
+}
+
+/* Cards */
+.form-card, .cart-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+}
+
+/* Headings */
+.product-form h2, .cart-card h2 {
+  color: #2980b9;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #34495e;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1.5px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #2980b9;
+  outline: none;
+}
+
+/* Buttons */
+.btn, .btn-reset, .btn-action, .btn-cancel {
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 12px 18px;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  width: 100%;
+  background-color: #27ae60;
+  margin-top: 12px;
+}
+
+.btn:hover {
+  background-color: #219150;
+}
+
+.btn-reset {
+  background-color: #e74c3c;
+  padding: 12px 24px;
+}
+
+.btn-reset:hover {
+  background-color: #c0392b;
+}
+
+/* Table styles */
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.cart-table th, .cart-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.cart-table th {
+  background-color: #2980b9;
+  color: white;
+  font-weight: 700;
+  user-select: none;
+}
+
+.cart-table tbody tr:hover {
+  background-color: #f1f9ff;
+}
+
+/* Action buttons in table */
+.btn-action {
+  padding: 6px 14px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  font-weight: 600;
+  margin: 0 3px;
+  color: white;
+  user-select: none;
+}
+
+.btn-action.edit {
+  background-color: #2980b9;
+}
+
+.btn-action.edit:hover {
+  background-color: #1f6391;
+}
+
+.btn-action.delete {
+  background-color: #e74c3c;
+}
+
+.btn-action.delete:hover {
+  background-color: #b53025;
+}
+
+/* Cancel button next to update */
+.btn-cancel {
+  background-color: #7f8c8d;
+  color: white;
+  margin-left: 15px;
+  padding: 12px 20px;
+}
+
+.btn-cancel:hover {
+  background-color: #616f70;
+}
+
+/* Total section */
+.total-section {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+/* Empty cart message */
+.empty {
+  padding: 30px 0;
+  font-style: italic;
+  text-align: center;
+  color: #999;
+}
+
+/* Responsive for small screens */
+@media (max-width: 699px) {
+  .form-card, .cart-card {
+    margin-bottom: 40px;
+  }
+}
+
